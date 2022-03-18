@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>The Eiffel Tower</title>
 </head>
@@ -32,6 +33,23 @@
             </div>
         </div>
     </div>
-    
+    <div class="form">
+        
+        <form >
+            <h2>Book Tickets</h2>
+            <label for="name">Name</label> 
+            <input type="text" name="name" id="name" placeholder="eg. Paolo">
+            <br>
+            <label for="phone">Mobile Number</label>
+            <input type="tel" name="phone" id="phone" placeholder="+44###########">
+        </form>
+        <button onclick="submit()">Sumbit</button>
+        <table>
+            <ul>
+                <li> Date: <span id= "currentDate"></span></li>
+                <li> Name <span id= "enteredName"></span></li>
+            </ul>
+        </table>
+    </div>
 </body>
 </html>

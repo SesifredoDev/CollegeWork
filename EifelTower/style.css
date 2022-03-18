@@ -1,5 +1,7 @@
 body{
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,58,121,1) 29%, rgba(0,0,0,1) 100%);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(145,0,255,1) 100%);
+    display: flexbox;
 }
 h1{
     text-align: center; 
@@ -11,20 +13,45 @@ h1{
 .main{
     margin-left: 10vw;
     width: 80vw;
+    height: 60vh;
 }
 .towerImg{
-    clip-path: polygon(31.75% 16%, 42.5% 14%, 55.25% 13.25%, 65% 17%, 69% 23.5%, 76.25% 30.25%, 78% 36.5%, 80% 42.75%, 83.75% 48.75%, 84% 56.25%, 81.5% 64.25%, 67.97% 71.41%, 52.5% 69.5%, 37.5% 67.25%, 20.75% 61.5%, 11.25% 49.25%, 13.75% 28%, 22.75% 20.25%);
+    box-sizing: border-box;
+        -webkit-clip-path: ellipse(42% 40% at 50% 42%);
+    clip-path: ellipse(42% 40% at 50% 42%);
     width: 50vw;
 }
 .information{
     float: right;
 }
 .content{
-    
     padding: 1vw;
     height: fit-content;
     width: 25vw;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: white;
+    margin-top: 10%;
     margin-bottom: 10px;
 }
+.form{
+    padding: 1vw;
+    height: fit-content;
+    width: 70vw;
+    margin-left: 15vw;
+    border-radius: 10px;
+    background-color: white;
+}
+@media only screen and (max-width: 980px) {
+    .towerImg{
+        width: 100%;
+    }
+    .content{
+        width: 70vw;
+    }
+    .information{
+        float:center !important;
+    }
+    .main{
+        height: 100vh;
+    }
+  }
