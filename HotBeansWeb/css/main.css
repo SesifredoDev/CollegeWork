@@ -34,8 +34,12 @@ nav{
     margin-top:0.5vh;
     z-index: 999;
 }
+
+/* Hero / Home */
 .hero{
     background: linear-gradient(45deg, rgba(54,36,255,1) 0%, rgba(10,4,84,1) 50%, rgba(143,0,255,1) 100%);
+    background-attachment: fixed;
+    background-position: center;
     height: 100vh;
     width: 100%;
     margin-top: 0vh;
@@ -45,7 +49,7 @@ nav{
     margin-top: 25vh;
     margin-left: auto;
     margin-right: 20vw;
-    font-size: 8rem;
+    font-size: 15vh;
     text-align: right;
     color: white;
 }
@@ -59,20 +63,87 @@ nav{
     background-color: white;
     border-radius: 30px;
 }
+
+/* About */
 .about{
     z-index: 1;
     position: relative;
-    height: 100vh;
+    height: fit-content;
     width: 100%;
     background-color: #252525;
+    display: flex;
+}
+.about .content{
+    background-color: rgba(5, 0, 255, 0.17);
+    width: 80vw;
+    margin: 10vw;
+    border-radius: 20px;
+    align-self: center;
+    margin-left: 10vw;
+}
+.about .content #left{
+    width: 40%;
+    margin-top: 5%;
+    margin-left: 10%;
+    float:left;
+    color: white;
+}
+.about .content #left h1{
+    font-size: 5vh;
+}
+.about .content #left p{
+    font-size: 2.5vh;
+    margin-bottom: 10%;
 }
 
-
-
+.about .content img{
+    object-fit: cover;
+    width: 30%;
+    height: 70vh;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    object-position: 20% 10%;
+    margin-left: 10%;
+    border-radius: 20px;
+}
+/* Our Team */
+.team{
+    background: linear-gradient(45deg, rgba(54,36,255,1) 0%, rgba(10,4,84,1) 50%, rgba(143,0,255,1) 100%);
+    background-attachment: fixed;
+    background-position: center;
+}
+.team h1{
+    font-size: 5vh;
+    width: 100%;
+    text-align: center;
+}
+.team div{
+    display: flex;
+    width: 100%;
+}
+.staffItem{
+    background-color: white;
+    padding: 2vw;
+    width: 20vw;
+    display:list-item;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    margin-left: 6.66vw;
+    margin-right: 6.66vw;
+}
 @media only screen and (max-width: 706px) {
     .hero button{
         visibility: hidden;
 
+    }
+    .about .content #left{
+        width: 80%;
+    }
+    
+    .about .content img{
+        visibility: hidden;
     }
 
 }

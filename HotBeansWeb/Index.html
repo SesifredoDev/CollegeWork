@@ -12,16 +12,52 @@
     <nav id="nav">
         <img class="Nav-logo" src="assets/logo.png" alt="">
         <div class="navOptions">
-            <a>Home</a>
+            <a onClick="scrollToElement('home')">Home</a>
             <a onClick="scrollToElement('about')">About Us</a>
+            <a onClick="scrollToElement('team')">Our Team</a>
+            <button>Apply Now!</button>
         </div>
     </nav>
-    <div class="hero">
+    <div class="hero" id="home">
         <h1>Hot Beans <br> Web</h1>
         <button>Apply Now!</button>
     </div>
     <section id="about"class="about">
-        <h1>hello</h1>
+        <div class="content">
+            <div id="left">
+                <h1>About Us</h1>
+                <p>
+                    We are a small company for engineering, designing and releasing websites, that opened in 2018 looking to expand peoples understanding of how powerful the internet is. Our ultimate goal is to be accessible to everyone and cheap as to enable people vocalise their view
+points.
+<br> <br>
+Hot Beans web started off as a family busness locally to chelmsford, and now have around 20 people and growing steadly. We today have the policy to accept most, if not all clients request, and welcome any possible adition to our little family.
+                </p>
+                <p>Email: contact@hotbeansweb.com      Phone: 07123456789</p>
+            </div>
+            <img src="assets/aboutUs.jpg" alt="">
+            
+        </div>
+    </section>
+    <section class="team" id="team">
+        <h1>Our Team</h1>
+        <br>
+        <div>
+            <div class="staffItem">
+                <img src="" class="profile" alt="">
+                <h2>Name</h2>
+                <h3>Job Title</h3>
+            </div>
+            <div class="staffItem">
+                <img src="" class="profile" alt="">
+                <h2>Name</h2>
+                <h3>Job Title</h3>
+            </div>
+            <div class="staffItem">
+                <img src="" class="profile" alt="">
+                <h2>Name</h2>
+                <h3>Job Title</h3>
+            </div>
+        </div>
     </section>
 </body>
 <script src="js/main.js"></script>
