@@ -5,8 +5,8 @@ window.onscroll = function(e){
 
     }else{
         navBar.style.background = 'rgb(68, 68, 68)';
-    };;
+    };
 }
 function scrollToElement(id){
-    document.getElementById(id).scrollIntoView()
-}
+    document.getElementById(id).scrollIntoView();
+};
