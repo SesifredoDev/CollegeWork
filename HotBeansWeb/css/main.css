@@ -144,6 +144,7 @@ nav{
 }
 .staffItem img{
     width: 50%;
+    height: 70%;
     border-radius: 100%;
 }
 /* TeamMember View,  Dialog Box */
