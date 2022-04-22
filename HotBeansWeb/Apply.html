@@ -11,29 +11,85 @@
 </head>
 <body>
     <nav id="nav">
-        <img class="Nav-logo" href="Index.html" onClick="scrollToElement('home')" src="assets/logo.png" alt="">
+        <a href="Index.html"><img class="Nav-logo"   src="assets/logo.png" alt=""></a>
         <div class="navOptions">
-            <a href="Index.html" >Home</a>
-            <a onClick="scrollToElement('vac')">vacancies</a>
-            <a onClick="scrollToElement('team')">Our Team</a>
+            <a href="Index.html#home">Home</a>
+            <a onClick="scrollToElement('about')" href="Index.html#about">About Us</a>
+            <a onClick="scrollToElement('team')" href="Index.html#team">Our Team</a>
+            <a onClick="scrollToElement('vac')" href="#vac">Vacancies</a>
+            <a onClick="scrollToElement('apply')" href="#apply">Apply</a>
         </div>
     </nav>
     <div class="hero" id="home">
         <h1>Hot Beans <br> Web<br> <span> Application</span> </h1>
     </div>
     <div class="vacancies" id="vac">
+        <a href="#vac"></a>
+        <h1 class="vacTitle">Vacent Jobs</h1>
         <table class="vacTable">
             <tr>
-              <td></td>
-              <td>Maria Anders</td>
-              <td>Germany</td>
+                <th>Job </th>
+                <th> Salary</th>
+                <th>Requirements</th>
+                <th>Free Courses <br> For recommendation</th>
             </tr>
             <tr>
-              <td>Centro comercial Moctezuma</td>
-              <td>Francisco Chang</td>
-              <td>Mexico</td>
+              <td>Website Developer</td>
+              <td>£35,752</td>
+              <td>Strength in HTML, CSS, JS and libraries such as angular and react.</td>
+              <td class="vacImgSlot">
+                  <a href="https://www.codecademy.com/catalog/language/html-css" target="_blank"><img src="https://www.freecodecamp.org/news/content/images/2019/07/Want_to_learn_to_build_websites__Try_our_free_HTML__-CSS_crash_course.jpg" alt=""></a>
+                  <p>A simple Web developement course</p>
+                </td>
+            </tr>
+            <tr>
+              <td>Graphics Designer</td>
+              <td>£26,527</td>
+              <td>Experience in Adobe products and vector graphic design</td>
+              <td class="vacImgSlot">
+                  <a href="https://www.arts.ac.uk/subjects/communication-and-graphic-design/short-courses/digital-design/adobe-creative-cloud-online-short-course-lcc" target="_blank"><img src="https://cdn.domestika.org/c_fill,dpr_1.0,f_auto,h_428,pg_1,q_auto:eco,t_base_params,w_760/v1603805648/course-covers/000/001/444/1444-original.jpg?1603805648" alt=""></a>
+                    <p>A simple Adobe creative cloud course, 3 days long</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Project Leader</td>
+                <td>£47,500</td>
+                <td>Experience in working in large groups, a general understanding in all areas (including front & back developement, and graphic design) </td>
+                <td class="vacImgSlot">
+                    <a href="https://www.knowledgetrain.co.uk/project-management/project-management-courses-online-uk" target="_blank"><img src="https://www.totalsuccess.co.uk/wp-content/uploads/2018/07/pm-556x333.jpg" alt=""></a>
+                    <p>A simple Adobe creative cloud course, 3 hours long</p>
+                </td>
             </tr>
           </table>
+    </div>
+    <div class="apply" id="apply">
+        <h1>Apply for a job</h1>
+        <form action="">
+            <label for="frmJob">Select Job</label>
+            <select class="form-control" name="frmJob">
+                <option>Web Developer</option>
+                <option>Graphic Designer</option>
+                <option>Project Leader</option>
+            </select> <br>
+
+            <label for="frmName">Name</label>
+            <input id="frmName" name="frmName" type="text"> <br>
+
+            <label for="frmEmail">Email</label>
+            <input id="frmEmail" name="frmEmail" type="Email"> <br>
+            
+            <br>
+            <label for="frmCV">CV</label>
+            <input type="file" id="cv" name="frnCV">
+            <br>
+            <label for="frmCL">Cover Letter</label>
+            <input type="file" id="CL" name="frmCL">
+
+            <br>
+            <button type="submit" name="submit">Submit Application</button>
+            
+            
+        </form>
     </div>
 </body>
 <script src="js/main.js"></script>

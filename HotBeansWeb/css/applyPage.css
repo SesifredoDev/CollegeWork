@@ -6,12 +6,82 @@
     background-color: rgb(68, 68, 68);
     height: 100vh;
 }
+.vacTitle{
+    position: absolute;
+    color: white;
+    font: 2rem;
+    margin-top: 5vh;
+    left: 45%;
+    text-align: center;
+}
 .vacTable{
-    background-color: white;
+    color:white;
     width: 80vw;
     height: 80vh;
     
     position: absolute;
     margin-left: 10vw;
     margin-top: 10vh;
+}
+.vacTable tr{
+    margin-top: 10vh;
+    font-size: 1.25rem;
+}
+th{
+    height: 5vh;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+
+td{
+    border: 2px solid white;
+    height: 17.5vh;
+    overflow: hidden;
+}
+.vacImgSlot{
+    width:16vw;
+    height: 17.5vh;
+    text-align:center ;
+}
+td img{
+    overflow:hidden;
+    width: 15vw;
+}
+td img:hover {
+	width: 16vw;
+    margin-left: 0vw;
+}
+.apply{
+    height: 50vh;
+    width: 40vw;
+    border: 1px solid black;
+    border-radius: 25px;
+    text-align: center;
+    margin-left: 30vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    box-shadow: 5px 10px #888888;
+}
+.apply h1{
+    margin-top: 1vh;
+}
+.apply form{
+    margin-top: 5vh;
+    font-size: 1.3rem;
+}
+.apply form input, select{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: max-content;
+    height: 2vh;
+}
+.apply button{
+    color: white;
+    background-color: rgb(0, 100, 5);
+    border:0px ;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    height: 5vh;
+    width: 10vw;
+    margin-top: 3vh ;
 }
