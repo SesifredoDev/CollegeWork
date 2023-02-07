@@ -1,0 +1,12 @@
+{
+    "001":{
+        "name":"Start Location",
+        "description":"A barren landscape lays before you, Paraiso. The gravel and carbon ground looks like a sea of cemented lava. \n The ruble showing no evidance of life for miles around, with the sun looming above you, as if daring you to \n   test its might.",
+        "options":[{"name":"Look Around", "rID":"002"}]
+    },
+    "002":{
+        "name":"Distant Castle",
+        "description":"Across the coal ground you can see a distant shape, somewhat resemblant to a castle, though the heat waves before you \n warps your preseption. A weird feeling befalls you, like a tugging feeling pulling you towards this \n new adventrure ",
+        "options":[{"name":"Make your way there?", "rID":"002"}]
+    }
+}
