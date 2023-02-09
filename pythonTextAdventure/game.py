@@ -1,20 +1,23 @@
 import json
 from colorama import Fore, Back, Style
+import os
 
-
+size = os.get_terminal_size().columns*2
+print(size)
 
 with open("locations.json", "r") as read_file:
     data = json.load(read_file)
 
-location = "001"
+location = 0
 
 def main():
     newLocation = data[location]
     loadLocation(newLocation)
-    optionSelection(newLocation["options"])
+    choice = int(input(""))
+    optionSelection(newLocation["options"], choice)
 
 def loadLocation(location):
-    print("-------------------------")
+    print(Fore.BLUE + "-"*size , Style.RESET_ALL)
     print(Fore.RED + location["name"], Style.RESET_ALL)
     print(location["description"])
     print("Do you want to:")
@@ -23,14 +26,12 @@ def loadLocation(location):
         count += 1
         print(str(count) + ". " + item["name"])
 
-def optionSelection(options):
-    choice = int(input(""))
-    index = 0
-    for option in options:
-        index += 1
-        if index == choice:
-            global location
-            location = option["rID"]
-
+def optionSelection(options, choice):
+    if (choice <= len(options)):
+        global location 
+        location = options[choice - 1]["rID"]
+    else:
+        choice = int(input("Select an option above: \n"))
+        optionSelection(options, choice)
 while True:
     main()

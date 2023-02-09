@@ -1,12 +1,29 @@
-{
-    "001":{
+[
+    {
         "name":"Start Location",
         "description":"A barren landscape lays before you, Paraiso. The gravel and carbon ground looks like a sea of cemented lava. \n The ruble showing no evidance of life for miles around, with the sun looming above you, as if daring you to \n   test its might.",
-        "options":[{"name":"Look Around", "rID":"002"}]
+        "options":[{"name":"Look Around", "rID":1}]
     },
-    "002":{
+    {
         "name":"Distant Castle",
         "description":"Across the coal ground you can see a distant shape, somewhat resemblant to a castle, though the heat waves before you \n warps your preseption. A weird feeling befalls you, like a tugging feeling pulling you towards this \n new adventrure ",
-        "options":[{"name":"Make your way there?", "rID":"002"}]
+        "options":[{"name":"Make your way there?", "rID":2}, {"name":"Stay Away, look for food.", "rID":3}, {"name":"take a drink from your carton.", "rID":4}]
+    },
+    {
+        "name":"On the way",
+        "description":"As you move, you darkened garbs, chard by your last adventure, feels heavier and heavier. You make your way, but you look \n to the side and see a faint shapes, almost like shadows, moving away from the distant castle. Then \n you begin to notice.... The wind.. its screaming.",
+        "options":[{"name":"continue foward", "rID":4}, {"name":"turn away", "rID":3}]
+    },
+    {
+        "name":"No way Out",
+        "description":"The landscape looks consitant. No real disturnable way to navigate, or landmarks to use for reference. As time goes by, you \n see that there is a shape in the distance. The Castle. ",
+        "options":[{"name":"Go towards the Castle", "rID":2}]
+    },
+    {
+        "name":"The Domed entrance to a Cobble Castle",
+        "description":"An entrance, shaped in a welcoming donme, is made entirely of cracked stone bricks, and cobble. Clearly this castle had once \n been great, but that magnigicance has disapated with time.",
+        "options":[{"name":"Go towards the Castle", "rID":0}]
     }
-}
+
+
+]
