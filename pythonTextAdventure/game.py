@@ -16,11 +16,15 @@ with open("locations.json", "r") as read_file:
 location = 0
 encounterList = data["encounters"]
 player = data["player"]
+
+
 def main():
     newLocation = data["story"][location]
     loadLocation(newLocation)
     choice = int(input(""))
     optionSelection(newLocation["options"], choice)
+
+
 
 def loadLocation(location):
     print(Fore.BLUE + "-"*size , Style.RESET_ALL)
@@ -31,6 +35,8 @@ def loadLocation(location):
     for item in location["options"]:
         count += 1
         print(str(count) + ". " + item["name"])
+
+
 
 def optionSelection(options, choice):
     if (choice <= len(options)):
@@ -44,12 +50,12 @@ def optionSelection(options, choice):
         choice = int(input("Select an option above: \n"))
         optionSelection(options, choice)
 
+
 def loadEncounter(level):
     monstersFiltered = filterNumFunc(encounterList, "level", level)
     monsterChoice = random.randint(0, len(monstersFiltered)-1)
     monster = monstersFiltered[monsterChoice]
     fighting(player, monster, size)
-    
 
 while True:
     os.system('cls' if os.name == 'nt' else 'clear')

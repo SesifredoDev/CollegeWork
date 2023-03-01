@@ -2,32 +2,47 @@
     {
         "name":"Start Location",
         "description":"A barren landscape lays before you, Paraiso. The gravel and carbon ground looks like a sea of cemented lava. \n The ruble showing no evidance of life for miles around, with the sun looming above you, as if daring you to \n   test its might.",
-        "options":[{"name":"Look Around", "encounter":false, "rID":1}]
+        "options":[
+            {"name":"Look Around", "encounter":false, "rID":1}
+        ]
     },
     {
         "name":"Distant Castle",
         "description":"Across the coal ground you can see a distant shape, somewhat resemblant to a castle, though the heat waves before you \n warps your preseption. A weird feeling befalls you, like a tugging feeling pulling you towards this \n new adventrure ",
-        "options":[{"name":"Make your way there?","encounter":1 , "rID":2}, {"name":"Stay Away, look for food.","encounter":1 , "rID":3}, {"name":"take a drink from your carton.","encounter":1 , "rID":4}]
+        "options":[
+            {"name":"Make your way there?","encounter":1 , "rID":2},
+            {"name":"Stay Away, look for food.","encounter":false , "rID":3},
+            {"name":"take a drink from your carton.","encounter":false , "rID":4}
+        ]
     },
     {
         "name":"On the way",
         "description":"As you move, you darkened garbs, chard by your last adventure, feels heavier and heavier. You make your way, but you look \n to the side and see a faint shapes, almost like shadows, moving away from the distant castle. Then \n you begin to notice.... The wind.. its screaming.",
-        "options":[{"name":"continue foward","encounter":true , "rID":4}, {"name":"turn away","encounter":true , "rID":3}]
+        "options":[
+            {"name":"continue foward","encounter":false , "rID":4},
+            {"name":"turn away","encounter":1 , "rID":3}
+        ]
     },
     {
         "name":"No way Out",
         "description":"The landscape looks consitant. No real disturnable way to navigate, or landmarks to use for reference. As time goes by, you \n see that there is a shape in the distance. The Castle. ",
-        "options":[{"name":"Go towards the Castle","encounter":true , "rID":2}]
+        "options":[
+            {"name":"Go towards the Castle","encounter":1 , "rID":2}
+        ]
     },
     {
         "name":"The Domed entrance to a Cobble Castle",
         "description":"An entrance, shaped in a welcoming donme, is made entirely of cracked stone bricks, and cobble. Clearly this castle had once \n been great, but that magnigicance has disapated with time.",
-        "options":[{"name":"Go towards the Castle","encounter":true , "rID":0}]
+        "options":[
+            {"name":"Go towards the Castle","encounter":2 , "rID":0}
+        ]
     },
     {
         "name":"The Domed entrance to a Cobble Castle",
         "description":"An entrance, shaped in a welcoming donme, is made entirely of cracked stone bricks, and cobble. Clearly this castle had once \n been great, but that magnigicance has disapated with time.",
-        "options":[{"name":"Go towards the Castle", "encounter":true ,"rID":0}]
+        "options":[
+            {"name":"Go towards the Castle", "encounter":false ,"rID":0}
+        ]
     }
 ],
 "encounters":[
@@ -35,26 +50,42 @@
         "monster":"bob",
         "level":1,
         "hp": 50,
-        "sprite": "bob.txt" 
+        "maxHp": 50,
+        "sprite": "bob.txt", 
+        "damage": {"min":20, "max":30}
     },
     {
         "monster":"mort",
         "level":1,
-        "hp": 50 ,
-        "sprite": "bob.txt" 
+        "hp": 50,
+        "maxHp": 50,
+        "sprite": "snake.txt", 
+        "damage": {"min":20, "max":30}
     },
     {
         "monster":"barbra",
+        "level":1,
+        "hp": 100,
+        "maxHp": 50,
+        "sprite": "cactus.txt", 
+        "damage": {"min":20, "max":30}
+    },
+    {
+        "monster":"steve",
         "level":2,
-        "hp": 70 ,
-        "sprite": "bob.txt" 
+        "hp": 100,
+        "maxHp": 50,
+        "sprite": "wolf.txt", 
+        "damage": {"min":20, "max":30}
     }
 ],
 "player":{
-    "health":100,
+    "hp":100,
+    "maxHp": 100,
     "weapons":[
         {"name": "sword", "damage":45},
-        {"name": "bow", "damage":20}
+        {"name": "bow", "damage":20},
+        {"name": "dagger", "damage":2}
         ]
 }
 
